@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.staticfile.org/angular.js/1.4.6/angular.min.js"></script>
+  <title>Document</title>
+  <style>
+    input.ng-invalid {
+      background-color: lightblue;
+    }
+  </style>
+</head>
+<body>
+  <!-- <div ng-app="app" ng-controller="myCtrl">
+    名字：<input ng-model="name">
+  </div>
+
+  <script>
+    var app = angular.module('app', [])
+    app.controller('myCtrl', function($scope) {
+      $scope.name = "John Doe";
+    })
+  </script> -->
+
+  <!-- 双向绑定 -->
+  <!-- <div ng-app="app" ng-controller="myCtrl">
+    名字: <input ng-model="name">
+    <h1>你输入了: {{ name }}</h1>
+  </div>
+  <script>
+    var app = angular.module('app', [])
+    app.controller('myCtrl', function($scope) {
+      console.log($scope)
+      $scope.name = ''
+    })
+  </script> -->
+
+  <!-- 验证用户输入 ng-show -->
+  <!-- <form ng-app="" name="form">
+    Email:
+    <input type="email" name="address" ng-model="text">
+    <span ng-show="form.address.$error.email">不是一个合法的邮箱地址</span>
+  </form> -->
+
+  <!-- 应用状态 -->
+  <!-- <form ng-app="" name="form" ng-init="text='test@126.com'">
+    Email:
+    <input type="email" name="address" ng-model="text" required>
+    <p>编辑邮箱地址，查看状态的改变</p>
+    <h1>状态</h1>
+    <p>Valid: {{ form.address.$valid }}「如果输入的值是合法的则为 true」</p>
+    <p>Dirty: {{ form.address.$dirty }}「如果值改变则为 true」</p>
+    <p>Touched: {{ form.address.$touched}} 「如果通过触屏点击则为 true」</p>
+  </form> -->
+
+  <!-- ng for css -->
+  <!-- ng-empty
+  ng-not-empty
+  ng-touched
+  ng-untouched
+  ng-valid
+  ng-invalid
+  ng-dirty
+  ng-pending
+  ng-pristine -->
+  <form ng-app="" name="form">
+    输入你的名字: 
+    <input name="address" ng-model="text" required>
+  </form>
+</body>
+</html>
